@@ -10,6 +10,8 @@ jobs:
               imageName: "drydock/u14golall"
               imageTag: master
           script:
+            - echo $PATH
+            - export PATH="$PATH:/root/.gvm/bin/"
             - gvm list
             #- gvm use 1.4
             #- go version
