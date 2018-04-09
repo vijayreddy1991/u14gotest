@@ -9,7 +9,7 @@ jobs:
               imageTag: master
           script:
           
-            - gvm use 1.4
+            #- gvm use 1.4
             - go version
             - gvm use 1.7.6
             - go version
