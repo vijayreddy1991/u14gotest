@@ -1,10 +1,11 @@
 jobs:
   - name: golang-test
     type: runSh
+    runtime:
+      container: true
     steps:
       - TASK:
           runtime:
-            container: true
             options:
               imageName: "drydock/u14golall"
               imageTag: master
