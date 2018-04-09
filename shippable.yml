@@ -1,0 +1,13 @@
+jobs:
+  - name: golang-test
+    type: runSh
+    steps:
+      - TASK:
+          runtime:
+            options:
+              imageName: "drydock/u14golall"
+              imageTag: master
+          script:
+         
+            - gvm list
+          
