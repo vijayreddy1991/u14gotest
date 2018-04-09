@@ -8,8 +8,7 @@ jobs:
               imageName: "drydock/u14golall"
               imageTag: master
           script:
-         
-            - gvm list
+          
             - gvm use 1.4
             - go version
             - gvm use 1.7.6
