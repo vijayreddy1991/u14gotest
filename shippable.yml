@@ -4,6 +4,7 @@ jobs:
     steps:
       - TASK:
           runtime:
+            container: true
             options:
               imageName: "drydock/u14golall"
               imageTag: master
