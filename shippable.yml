@@ -10,9 +10,7 @@ jobs:
               imageName: "drydock/u14golall"
               imageTag: master
           script:
-            #- echo $PATH
-            #- export PATH="$PATH:/root/.gvm/bin/"
-            #- test -s "$HOME/.gvm/scripts/gvm" && source "$HOME/.gvm/scripts/gvm"
+            - echo '[[ -s "/root/.gvm/scripts/gvm" ]] && source "/root/.gvm/scripts/gvm"' >> /etc/drydock/.env
             - gvm list
             - gvm use 1.4
             - go version
